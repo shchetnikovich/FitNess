@@ -39,5 +39,6 @@ class StepCountController: UIViewController {
   }
 
   @IBAction func startStopPause(_ sender: Any?) {
+    AppModel.instance.start()
   }
 }
