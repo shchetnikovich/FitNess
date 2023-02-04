@@ -1,5 +1,5 @@
-import FitNess
 import XCTest
+@testable import FitNess
 
 
 final class AppModelTests: XCTestCase {

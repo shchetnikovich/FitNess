@@ -15,10 +15,38 @@ final class StepCountControllerTests: XCTestCase {
     try super.tearDownWithError()
   }
   
-  func testController_whenStartTapped_appIsInProgress() {   //  Проверяем когда user тапнет на кнопку startStopPause() проверяем по State
+  // MARK: - When
+  
+  private func whenStartStopPauseCalled() {
     sut.startStopPause(nil)
+  }
+  
+  // MARK: - Initial State
+  
+  func testController_whenCreated_buttonLabelIsStart() {
+    sut.viewDidLoad()
+    
+    let text = sut.startButton.title(for: .normal)
+    XCTAssertEqual(text, AppState.notStarted.nextStateButtonLabel)
+  }
+  
+  // MARK: - In Progress
+  
+  func testController_whenStartTapped_appIsInProgress() {   //   При нажатии на Start нужно проверить изменился ли State и UI
+    whenStartStopPauseCalled()
+    
     let state = AppModel.instance.appState
     XCTAssertEqual(state, AppState.inProgress)
   }
+  
+  func testController_whenStartTapped_buttonLabelIsPause() {
+    // when
+    whenStartStopPauseCalled()
+    // testing behavior
+    let text = sut.startButton.title(for: .normal)
+    XCTAssertEqual(text, AppState.inProgress.nextStateButtonLabel)
+  }
+  
+ 
   
 }

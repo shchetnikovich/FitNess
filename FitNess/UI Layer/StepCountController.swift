@@ -25,7 +25,6 @@ class StepCountController: UIViewController {
   @IBOutlet weak var chaseView: ChaseView!
 
   init() {
-    // this is a cheat to simplify chapter 3, a proper way of getting an instance will be handled in chapter 4
     super.init(nibName: nil, bundle: nil)
     startButton = UIButton()
   }
@@ -36,9 +35,16 @@ class StepCountController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    updateButton()
   }
 
   @IBAction func startStopPause(_ sender: Any?) {
     AppModel.instance.start()
+    updateButton()
+  }
+  
+  private func updateButton() {
+    let title = AppModel.instance.appState.nextStateButtonLabel
+    startButton.setTitle(title, for: .normal)
   }
 }
