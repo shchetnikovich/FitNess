@@ -16,12 +16,6 @@ final class AppModelTests: XCTestCase {
     try super.tearDownWithError()
   }
   
-  func testExample() throws {}
-  
-  func testPerformanceExample() throws {
-    self.measure {}
-  }
-  
   func testAppModel_whenInitialized_isInNotStartedState() {
     let initialState = sut.appState
     XCTAssertEqual(initialState, AppState.notStarted)

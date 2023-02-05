@@ -19,6 +19,9 @@
 		4CBCDEBE270142EE00E8992C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBD270142EE00E8992C /* AppModel.swift */; };
 		A9E8E061298D9BA00043B329 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E060298D9BA00043B329 /* AppModelTests.swift */; };
 		A9E8E063298DA75A0043B329 /* StepCountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E062298DA75A0043B329 /* StepCountControllerTests.swift */; };
+		A9FC7C44298FB8DC007A0D54 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C43298FB8DC007A0D54 /* AppError.swift */; };
+		A9FC7C47298FB94B007A0D54 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C46298FB94B007A0D54 /* DataModel.swift */; };
+		A9FC7C49298FB964007A0D54 /* Nessie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C48298FB964007A0D54 /* Nessie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A9E8E057298D99C60043B329 /* FitNessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitNessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E8E060298D9BA00043B329 /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 		A9E8E062298DA75A0043B329 /* StepCountControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountControllerTests.swift; sourceTree = "<group>"; };
+		A9FC7C43298FB8DC007A0D54 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A9FC7C46298FB94B007A0D54 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		A9FC7C48298FB964007A0D54 /* Nessie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nessie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +98,10 @@
 			children = (
 				4CBCDEB82701427500E8992C /* App Layer */,
 				4CBCDEBF270142F400E8992C /* App Model */,
-				4CBCDEB92701428100E8992C /* UI Layer */,
 				4CBCDEBA2701429900E8992C /* Assets & Info */,
+				A9FC7C45298FB915007A0D54 /* Data Model */,
 				185CB20923C78CE8009F7571 /* Info.plist */,
+				4CBCDEB92701428100E8992C /* UI Layer */,
 			);
 			path = FitNess;
 			sourceTree = "<group>";
@@ -133,6 +140,7 @@
 			children = (
 				4CBCDEBB270142DF00E8992C /* AppState.swift */,
 				4CBCDEBD270142EE00E8992C /* AppModel.swift */,
+				A9FC7C43298FB8DC007A0D54 /* AppError.swift */,
 			);
 			path = "App Model";
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A9E8E065298DA7F50043B329 /* App Model */,
+				A9FC7C4A298FB98A007A0D54 /* Data Model */,
 				A9E8E066298DA8010043B329 /* UI Layer */,
 			);
 			path = Cases;
@@ -168,6 +177,22 @@
 				A9E8E062298DA75A0043B329 /* StepCountControllerTests.swift */,
 			);
 			path = "UI Layer";
+			sourceTree = "<group>";
+		};
+		A9FC7C45298FB915007A0D54 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9FC7C46298FB94B007A0D54 /* DataModel.swift */,
+				A9FC7C48298FB964007A0D54 /* Nessie.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		A9FC7C4A298FB98A007A0D54 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +323,12 @@
 				185CB1FC23C78CE6009F7571 /* AppDelegate.swift in Sources */,
 				4CBCDEB52701425C00E8992C /* ChaseView.swift in Sources */,
 				4CBCDEB72701426800E8992C /* StepCountController.swift in Sources */,
+				A9FC7C49298FB964007A0D54 /* Nessie.swift in Sources */,
+				A9FC7C44298FB8DC007A0D54 /* AppError.swift in Sources */,
 				4CBCDEBC270142DF00E8992C /* AppState.swift in Sources */,
 				185CB1FE23C78CE6009F7571 /* SceneDelegate.swift in Sources */,
 				4CBCDEB32701423C00E8992C /* RootViewController.swift in Sources */,
+				A9FC7C47298FB94B007A0D54 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

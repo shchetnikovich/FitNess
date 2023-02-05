@@ -52,7 +52,7 @@ extension AppState {
     case .caught:
       imageName = "NessieWon"
     }
-    return UIImage(imageLiteralResourceName: imageName)
+    return UIImage(named: imageName)!
   }
 
   var runnerImage: UIImage {
@@ -69,6 +69,6 @@ extension AppState {
     case .caught:
       imageName = "RunnerEaten"
     }
-    return UIImage(imageLiteralResourceName: imageName)
+    return UIImage(named: imageName)!
   }
 }
