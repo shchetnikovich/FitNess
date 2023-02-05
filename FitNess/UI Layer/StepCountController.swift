@@ -35,7 +35,12 @@ class StepCountController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    updateUI()
+  }
+  
+  func updateUI() {
     updateButton()
+    updateChaseView()
   }
   
   private func updateButton() {
@@ -46,8 +51,12 @@ class StepCountController: UIViewController {
   // MARK: - UI Actions
 
   @IBAction func startStopPause(_ sender: Any?) {
-    AppModel.instance.start()
-    updateButton()
+    do {
+      try AppModel.instance.start()
+    } catch {
+      showNeedGoalAlert()
+    }
+    updateUI()
   }
 }
 

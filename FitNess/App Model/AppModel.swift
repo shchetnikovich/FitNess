@@ -8,7 +8,12 @@ public class AppModel {
 
   public init() {}
   
-  public func start() {
+  let dataModel = DataModel()
+  
+  public func start() throws {
+    guard dataModel.goal != nil else {
+      throw AppError.goalNotSet
+    }
     appState = .inProgress
   }
 }

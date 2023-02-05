@@ -15,6 +15,12 @@ final class StepCountControllerTests: XCTestCase {
     try super.tearDownWithError()
   }
   
+  //MARK: - Given
+  
+  func givenGoalSet() {
+    AppModel.instance.dataModel.goal = 1000
+  }
+  
   // MARK: - When
   
   private func whenStartStopPauseCalled() {
@@ -33,6 +39,8 @@ final class StepCountControllerTests: XCTestCase {
   // MARK: - In Progress
   
   func testController_whenStartTapped_appIsInProgress() {   //   При нажатии на Start нужно проверить изменился ли State и UI
+    givenGoalSet()
+    
     whenStartStopPauseCalled()
     
     let state = AppModel.instance.appState
@@ -40,6 +48,7 @@ final class StepCountControllerTests: XCTestCase {
   }
   
   func testController_whenStartTapped_buttonLabelIsPause() {
+    givenGoalSet()
     // when
     whenStartStopPauseCalled()
     // testing behavior

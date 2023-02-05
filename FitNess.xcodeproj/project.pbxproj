@@ -22,6 +22,7 @@
 		A9FC7C44298FB8DC007A0D54 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C43298FB8DC007A0D54 /* AppError.swift */; };
 		A9FC7C47298FB94B007A0D54 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C46298FB94B007A0D54 /* DataModel.swift */; };
 		A9FC7C49298FB964007A0D54 /* Nessie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C48298FB964007A0D54 /* Nessie.swift */; };
+		A9FC7C4C298FC5DE007A0D54 /* DataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C4B298FC5DE007A0D54 /* DataModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A9FC7C43298FB8DC007A0D54 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		A9FC7C46298FB94B007A0D54 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		A9FC7C48298FB964007A0D54 /* Nessie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nessie.swift; sourceTree = "<group>"; };
+		A9FC7C4B298FC5DE007A0D54 /* DataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		A9FC7C4A298FB98A007A0D54 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				A9FC7C4B298FC5DE007A0D54 /* DataModelTests.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FC7C4C298FC5DE007A0D54 /* DataModelTests.swift in Sources */,
 				A9E8E061298D9BA00043B329 /* AppModelTests.swift in Sources */,
 				A9E8E063298DA75A0043B329 /* StepCountControllerTests.swift in Sources */,
 			);
