@@ -17,6 +17,8 @@
 		4CBCDEB72701426800E8992C /* StepCountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEB62701426800E8992C /* StepCountController.swift */; };
 		4CBCDEBC270142DF00E8992C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBB270142DF00E8992C /* AppState.swift */; };
 		4CBCDEBE270142EE00E8992C /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCDEBD270142EE00E8992C /* AppModel.swift */; };
+		A998F3EE298FE65300CA1C1B /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A998F3ED298FE65300CA1C1B /* ViewControllers.swift */; };
+		A998F3F1298FE71A00CA1C1B /* RootViewController+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A998F3F0298FE71900CA1C1B /* RootViewController+Tests.swift */; };
 		A9E8E061298D9BA00043B329 /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E060298D9BA00043B329 /* AppModelTests.swift */; };
 		A9E8E063298DA75A0043B329 /* StepCountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E8E062298DA75A0043B329 /* StepCountControllerTests.swift */; };
 		A9FC7C44298FB8DC007A0D54 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FC7C43298FB8DC007A0D54 /* AppError.swift */; };
@@ -48,6 +50,8 @@
 		4CBCDEB62701426800E8992C /* StepCountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountController.swift; sourceTree = "<group>"; };
 		4CBCDEBB270142DF00E8992C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		4CBCDEBD270142EE00E8992C /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A998F3ED298FE65300CA1C1B /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		A998F3F0298FE71900CA1C1B /* RootViewController+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Tests.swift"; sourceTree = "<group>"; };
 		A9E8E057298D99C60043B329 /* FitNessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitNessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E8E060298D9BA00043B329 /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
 		A9E8E062298DA75A0043B329 /* StepCountControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountControllerTests.swift; sourceTree = "<group>"; };
@@ -147,9 +151,27 @@
 			path = "App Model";
 			sourceTree = "<group>";
 		};
+		A998F3EC298FE63100CA1C1B /* Test Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A998F3ED298FE65300CA1C1B /* ViewControllers.swift */,
+			);
+			path = "Test Classes";
+			sourceTree = "<group>";
+		};
+		A998F3EF298FE6EE00CA1C1B /* Test Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A998F3F0298FE71900CA1C1B /* RootViewController+Tests.swift */,
+			);
+			path = "Test Extensions";
+			sourceTree = "<group>";
+		};
 		A9E8E058298D99C70043B329 /* FitNessTests */ = {
 			isa = PBXGroup;
 			children = (
+				A998F3EF298FE6EE00CA1C1B /* Test Extensions */,
+				A998F3EC298FE63100CA1C1B /* Test Classes */,
 				A9E8E064298DA7E90043B329 /* Cases */,
 			);
 			path = FitNessTests;
@@ -339,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A998F3F1298FE71A00CA1C1B /* RootViewController+Tests.swift in Sources */,
 				A9FC7C4C298FC5DE007A0D54 /* DataModelTests.swift in Sources */,
 				A9E8E061298D9BA00043B329 /* AppModelTests.swift in Sources */,
+				A998F3EE298FE65300CA1C1B /* ViewControllers.swift in Sources */,
 				A9E8E063298DA75A0043B329 /* StepCountControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
