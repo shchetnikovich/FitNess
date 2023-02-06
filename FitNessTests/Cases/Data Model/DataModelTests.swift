@@ -18,7 +18,7 @@ final class DataModelTests: XCTestCase {
   //  MARK: - Goal
   
   func testModel_whenStarted_goalIsNotReached() {
-    XCTAssertFalse(sut.goalReached, "goalReached should be false when model is created")  //  Тесты могут иметь тектовое поле для описания ошибки
+    XCTAssertFalse(sut.goalReached, "text_error_test here")  //  Тесты могут иметь тектовое поле для описания ошибки
   }
   
   func testModel_whenStepsReachGoal_goalIsReached() {
